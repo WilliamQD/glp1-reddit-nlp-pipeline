@@ -2,7 +2,24 @@
 
 Curated public portfolio version of a BIS 550 final project on GLP-1 discourse across Reddit communities.
 
+![Python](https://img.shields.io/badge/Python-NLP_pipeline-blue)
+![EDA](https://img.shields.io/badge/EDA-aggregate_figures-teal)
+![Public health](https://img.shields.io/badge/Public_health-text_analytics-green)
+![Public safe](https://img.shields.io/badge/Public--safe-no_raw_text-green)
+
+Project context: Yale course final project | BIS 550 | Curated public showcase
+
 This repository demonstrates the NLP/data-engineering workflow behind the project without publishing raw Reddit posts, comments, labels, processed datasets, or model-prediction files.
+
+## At a Glance
+
+<table>
+  <tr>
+    <td><strong>Corpus scale</strong><br>32,377 post/comment records in the private project dataset.</td>
+    <td><strong>Core workflow</strong><br>Clean, normalize, explore, annotate, and prepare text for supervised modeling.</td>
+    <td><strong>Public boundary</strong><br>Only aggregate figures and reusable pipeline code are published.</td>
+  </tr>
+</table>
 
 ## Overview
 
@@ -29,6 +46,16 @@ The public-safe version keeps the reusable engineering ideas:
 3. **Tokenization:** normalize domain terms such as `GLP-1`, remove stopwords, and produce countable tokens.
 4. **EDA:** summarize post/comment mix, subreddit distribution, time trends, text length, and common terms.
 5. **Modeling handoff:** produce clean, analysis-ready text fields for manual labeling, topic modeling, and supervised classification.
+
+```mermaid
+flowchart LR
+    A[Reddit-style records] --> B[Record normalization]
+    B --> C[Text cleaning]
+    C --> D[Tokenization]
+    D --> E[Aggregate EDA]
+    E --> F[Labeling handoff]
+    F --> G[Classification-ready dataset]
+```
 
 ## Aggregate Results
 
