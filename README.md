@@ -47,16 +47,6 @@ The public-safe version keeps the reusable engineering ideas:
 4. **EDA:** summarize post/comment mix, subreddit distribution, time trends, text length, and common terms.
 5. **Modeling handoff:** produce clean, analysis-ready text fields for manual labeling, topic modeling, and supervised classification.
 
-```mermaid
-flowchart LR
-    A[Reddit-style records] --> B[Record normalization]
-    B --> C[Text cleaning]
-    C --> D[Tokenization]
-    D --> E[Aggregate EDA]
-    E --> F[Labeling handoff]
-    F --> G[Classification-ready dataset]
-```
-
 ## Aggregate Results
 
 The cleaned corpus used in the final project contained:
