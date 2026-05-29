@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Never publish Reddit data or derived row-level outputs.
+data/*.json
+data/*.jsonl
+data/*.csv
+data/*.xlsx
+data/*.parquet
+data/*.zip
+outputs/
+eda_outputs/*.csv
+predictions/
+labels/
+raw/
+processed/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
