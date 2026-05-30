@@ -11,6 +11,8 @@ Project context: Yale course final project | BIS 550 | Curated public showcase
 
 This repository demonstrates the NLP/data-engineering workflow behind the project without publishing raw Reddit posts, comments, labels, processed datasets, or model-prediction files.
 
+**Read the deliverables:** [Report](REPORT.md) | [Presentation](PRESENTATION.md)
+
 ## At a Glance
 
 <table>
@@ -73,6 +75,8 @@ Manual annotation was conducted in two stages: 700 randomly sampled items for br
 ## Repository Structure
 
 ```text
+REPORT.md
+PRESENTATION.md
 src/glp1_nlp/
   text_cleaning.py   # public-safe cleaning/tokenization helpers
   records.py         # normalize post/comment records
